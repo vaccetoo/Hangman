@@ -108,6 +108,8 @@ while (wrongAttempts < 6)
             Console.WriteLine();
             Console.WriteLine($"The letter '{currentChar}' is wrong !");
             Console.WriteLine();
+            Console.WriteLine($"The correct word is '{wordToGuess}'.");
+            Console.WriteLine();
             Console.WriteLine("-=GAME OVER=-");
             break;
         }
