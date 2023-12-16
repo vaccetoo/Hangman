@@ -30,6 +30,9 @@ newString.Append('_', wordToGuess.Length);
 while (wrongAttempts < 6)
 {
     Console.WriteLine("Guess a letter:");
+    Console.WriteLine();
+    Console.WriteLine(newString.ToString());
+    Console.WriteLine();
 
     char currentChar = char.Parse(Console.ReadLine());
 
@@ -131,12 +134,12 @@ while (wrongAttempts < 6)
         Console.WriteLine();
         Console.WriteLine("Correct!");
         Console.WriteLine();
-        Console.WriteLine(newString.ToString());
-        Console.WriteLine();
     }
 
     if (newString.ToString() == wordToGuess)
     {
+        Console.WriteLine(newString.ToString());
+        Console.WriteLine();
         Console.WriteLine("YOU WIN!");
         break;
     }
